@@ -18,14 +18,7 @@ $("#interesado").change(function(){
 	}
 });
 $("#telefono").change(function(){
-	if( $("#telefono").val().length < 8 ){
-		$("#telefono").css('background-color','pink').fadeOut(250).fadeIn(250).fadeOut(250).fadeIn(250).focus().val('').attr("placeholder","obligatorio 8 o mas digitos");
-		$("#telefono").prev().css("color","red");
-	}
-	else{
-		$("#telefono").removeAttr("style").css("border-color","green").prev().css("color","green").append('<i class="glyphicon glyphicon-ok"></i>');
-		$("#email").focus();
-	}
+	$("#email").focus();
 });
 $("#email").change(function(){
 	if( ! validaMail( $("#email").val() ) ){
@@ -34,6 +27,7 @@ $("#email").change(function(){
 	}
 	else{
 		$("#email").removeAttr("style").css("border-color","green").prev().css("color","green").append('<i class="glyphicon glyphicon-ok"></i>');
+		$("#botonEnvia").removeClass("disabled");
 		$("#nombreAgente").focus();
 	}
 });
@@ -47,27 +41,8 @@ $("#emailAgente").change(function(){
 	$("#nombreNegocio").focus();
 });
 $("#nombreNegocio").change(function(){
-	if( $("#nombreNegocio").val().length < 3 ){
-		$("#nombreNegocio").css('background-color','pink').fadeOut(250).fadeIn(250).fadeOut(250).fadeIn(250).focus().val('').attr("placeholder","Campo obligatorio");
-		$("#nombreNegocio").prev().css("color","red");
-	}
-	else{
-		$("#nombreNegocio").removeAttr("style").css("border-color","green").prev().css("color","green").append('<i class="glyphicon glyphicon-ok"></i>');
-		$("#giroNegocio").focus();
-	}
+	$("#giroNegocio").focus();
 });
-$("#giroNegocio").change(function(){
-	if( $("#giroNegocio").val().length < 3 ){
-		$("#giroNegocio").css('background-color','pink').fadeOut(250).fadeIn(250).fadeOut(250).fadeIn(250).focus().val('').attr("placeholder","Campo obligatorio");
-		$("#giroNegocio").prev().css("color","red");
-	}
-	else{
-		$("#giroNegocio").removeAttr("style").css("border-color","green").prev().css("color","green").append('<i class="glyphicon glyphicon-ok"></i>');
-		$("#botonEnvia").removeClass("disabled");
-		
-	}
-});
-
 
 $("#botonEnvia").click(function(){
 	$("#sendMail").submit();

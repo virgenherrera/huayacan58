@@ -82,7 +82,7 @@
 							<div class="col-md-6 sep-top-xs">
 								<div class="form-group">
 									<label for="telefono" class="upper">
-										telefono*
+										telefono
 									</label>
 									<input type="tel" id="telefono" placeholder="capture telefono" name="telefono" class="form-control input-lg required">
 								</div>
@@ -131,7 +131,7 @@
 							<h4 class="upper">elige tu local</h4>
 							<div class="form-group">
 								<label class="col-md-4 control-label upper" for="checkboxes">
-									indica que local(es) te interesa(n)*
+									indica que local(es) te interesa(n)
 								</label>
 								<div class="col-md-4">
 								<div class="checkbox">
@@ -166,7 +166,7 @@
 							<div class="col-md-6 sep-top-xs">
 								<div class="form-group">
 									<label for="nombreNegocio" class="upper">
-										nombre Negocio*
+										nombre Negocio
 									</label>
 									<input type="text" id="nombreNegocio" placeholder="capture nombre de su Negocio" name="nombreNegocio" class="form-control input-lg required">
 								</div>
@@ -174,7 +174,7 @@
 							<div class="col-md-6 sep-top-xs">
 								<div class="form-group">
 								<label for="giroNegocio" class="upper">
-									giro Negocio*
+									giro Negocio
 								</label>
 								<input type="text" id="giroNegocio" placeholder="capture giro de su Negocio" name="giroNegocio" class="form-control input-lg required">
 							</div>
