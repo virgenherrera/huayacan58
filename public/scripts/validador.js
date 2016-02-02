@@ -63,7 +63,7 @@ $("#giroNegocio").change(function(){
 	}
 	else{
 		$("#giroNegocio").removeAttr("style").css("border-color","green").prev().css("color","green").append('<i class="glyphicon glyphicon-ok"></i>');
-		$("#botonEnvia").removeClass("hidden");
+		$("#botonEnvia").removeClass("disabled");
 		
 	}
 });

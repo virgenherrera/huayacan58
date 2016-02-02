@@ -59,7 +59,7 @@
 			(2) => testing
 				(0) => develpment
 	*/
-	switch (1) { //<===============	cambiar MODO de operacion
+	switch (0) { //<===============	cambiar MODO de operacion
 		case 1:
 			$quick_change = 'production';
 		break;

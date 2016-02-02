@@ -69,21 +69,22 @@
 					</div>
 					<form id="sendMail" action="<?=base_url('mail');?>" method="post" class="form-gray-fields validate">
 						<div class="row">
+							<small>*campos obligatorios</small>
 							<h4 class="upper">datos del interesado</h4>
 							<div class="col-md-6 sep-top-xs">
 								<div class="form-group">
 									<label for="interesado" class="upper">
-										interesado
+										interesado*
 									</label>
-									<input type="text" id="interesado" placeholder="enter interesado" name="interesado" class="form-control input-lg required">
+									<input type="text" id="interesado" placeholder="capture interesado" name="interesado" class="form-control input-lg required">
 								</div>
 							</div>
 							<div class="col-md-6 sep-top-xs">
 								<div class="form-group">
 									<label for="telefono" class="upper">
-										telefono
+										telefono*
 									</label>
-									<input type="tel" id="telefono" placeholder="enter telefono" name="telefono" class="form-control input-lg required">
+									<input type="tel" id="telefono" placeholder="capture telefono" name="telefono" class="form-control input-lg required">
 								</div>
 							</div>
 						</div>
@@ -91,9 +92,9 @@
 							<div class="col-md-6 sep-top-xs">
 								<div class="form-group">
 									<label for="email" class="upper">
-										email
+										email*
 									</label>
-									<input type="email" id="email" placeholder="enter email" name="email" class="form-control input-lg required">
+									<input type="email" id="email" placeholder="capture email" name="email" class="form-control input-lg required">
 								</div>
 							</div>
 						</div>
@@ -104,7 +105,7 @@
 									<label for="nombreAgente" class="upper">
 										nombre del agente
 									</label>
-									<input type="text" id="nombreAgente" placeholder="enter nombreAgente" name="nombreAgente" class="form-control input-lg">
+									<input type="text" id="nombreAgente" placeholder="capture nombre del Agente" name="nombreAgente" class="form-control input-lg">
 								</div>
 							</div>
 							<div class="col-md-6 sep-top-xs">
@@ -112,7 +113,7 @@
 									<label for="telAgente" class="upper">
 										telefono del agente
 									</label>
-									<input type="tel" id="telAgente" placeholder="enter telAgente" name="telAgente" class="form-control input-lg">
+									<input type="tel" id="telAgente" placeholder="capture tel del Agente" name="telAgente" class="form-control input-lg">
 								</div>
 							</div>
 						</div>
@@ -122,14 +123,16 @@
 									<label for="emailAgente" class="upper">
 										email del Agente
 									</label>
-									<input type="text" id="emailAgente" placeholder="enter emailAgente" name="emailAgente" class="form-control input-lg">
+									<input type="text" id="emailAgente" placeholder="capture email del Agente" name="emailAgente" class="form-control input-lg">
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<h4 class="upper">elige tu local</h4>
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="checkboxes">indica que local(es) te interesan:</label>
+								<label class="col-md-4 control-label upper" for="checkboxes">
+									indica que local(es) te interesa(n)*
+								</label>
 								<div class="col-md-4">
 								<div class="checkbox">
 									<label for="">
@@ -161,10 +164,20 @@
 						<div class="row">
 							<h4 class="upper">datos del negocio</h4>
 							<div class="col-md-6 sep-top-xs">
-								<div class="form-group"><label for="nombreNegocio" class="upper">nombre Negocio</label><input type="text" id="nombreNegocio" placeholder="enter nombreNegocio" name="nombreNegocio" class="form-control input-lg required"></div>
+								<div class="form-group">
+									<label for="nombreNegocio" class="upper">
+										nombre Negocio*
+									</label>
+									<input type="text" id="nombreNegocio" placeholder="capture nombre de su Negocio" name="nombreNegocio" class="form-control input-lg required">
+								</div>
 							</div>
 							<div class="col-md-6 sep-top-xs">
-								<div class="form-group"><label for="giroNegocio" class="upper">giro Negocio</label><input type="text" id="giroNegocio" placeholder="enter giroNegocio" name="giroNegocio" class="form-control input-lg required"></div>
+								<div class="form-group">
+								<label for="giroNegocio" class="upper">
+									giro Negocio*
+								</label>
+								<input type="text" id="giroNegocio" placeholder="capture giro de su Negocio" name="giroNegocio" class="form-control input-lg required">
+							</div>
 							</div>
 						</div>
 						<div class="row">
@@ -214,7 +227,9 @@
 						</div>
 						<div class="row">
 							<div class="col-md-11 sep-top-md">
-								<button id="botonEnvia" type="submit" class="btn btn-success btn-block hidden">
+								<small>*campos obligatorios</small>
+								<button id="botonEnvia" type="submit" class="btn btn-success btn-block disabled">
+									Enviar!
 									<i class="glyphicon glyphicon-ok"></i>	
 								</button>
 							</div>

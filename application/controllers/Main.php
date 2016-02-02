@@ -22,8 +22,8 @@ class Main extends CI_Controller {
 						'aboutp'			=>	$this->setAboutp(),
 						'aboutp2'	=>	'Al llenar la forma, un agente se comunicará con usted para agendar una cita dentro de las siguientes 8 horas hábiles.',
 						'aboutGal'	=>	$aboutGal,
-						'titulo'=>'Titulo',
-						'parrafo'=>'lorem Lorem',
+						'titulo'=>'¿Tienes preguntas?',
+						'parrafo'=>self::parrafo(),
 						'nombre'=>'Huayacan58',
 						'carTitle' 	=>	$this->setCaracteristicas()['carTitle'],
 						'carP' 		=>	$this->setCaracteristicas()['carP'],
@@ -272,6 +272,14 @@ class Main extends CI_Controller {
 		else{
 			return TRUE;
 		}
+	}
+
+	private function parrafo(){
+		return
+		'
+		Nosotros  tenemos las respuestas. <br>
+		Sólo tienes que enviar un mensaje y nuestro personal estará en contacto con usted dentro de las proximas 8 horas hábiles.
+		';
 	}
 }
 
